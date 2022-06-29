@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Dotsquares
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * Dotsquares
+ *
+ * @category   Dotsquares
+ * @package    Dotsuqares_OneStepCheckout
+ * @author     Dotsquares
+ * @copyright  Copyright (c) Dotsuqares
+ * @license    Dotsquares
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <onestepcheckoutdts>
+            <general>
+                <enable>1</enable>
+                <enable_order_comment>1</enable_order_comment>
+                <enable_subscribe_newsletter>1</enable_subscribe_newsletter>
+                <allow_guest_checkout>1</allow_guest_checkout>
+            </general>
+            <display_setting>
+                <enable_delivery_comment>1</enable_delivery_comment>
+                <show_header_footer>1</show_header_footer>
+                <display_term_condition>1</display_term_condition>
+                <step_number_color>#FF1234</step_number_color>
+                <step_bgr_color>#7DF7FF</step_bgr_color>
+            </display_setting>
+        </onestepcheckoutdts>
+    </default>
+</config>

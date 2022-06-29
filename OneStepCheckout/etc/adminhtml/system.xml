@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Dotsquares
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * Dotsquares
+ *
+ * @category   Dotsquares
+ * @package    Dotsuqares_OneStepCheckout
+ * @author     Dotsquares
+ * @copyright  Copyright (c) Dotsuqares
+ * @license    Dotsquares
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="dotsquares" sortOrder="15">
+            <label>Dotsquares</label>
+        </tab>
+        <section id="onestepcheckoutdts" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>One Step Checkout</label>
+            <tab>dotsquares</tab>
+            <resource>Dotsquares_OneStepCheckout::config_onestepcheckout</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Select Yes to enable the module.</comment>
+                </field>
+                <field id="enable_order_comment" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Order Comment</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                 <field id="enable_subscribe_newsletter" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Subscribe Newsletter</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="default_shipping_method" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Default Shipping Method</label>
+                     <source_model>Dotsquares\OneStepCheckout\Model\Config\Source\Shipping</source_model>
+                </field>
+                <field id="default_payment_method" translate="label" type="select" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Default Payment Method</label>
+                    <source_model>Dotsquares\OneStepCheckout\Model\Config\Source\Payment</source_model>
+                </field>
+                <field id="allow_guest_checkout" translate="label" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Allow Guest Checkout</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="display_setting" translate="label" type="text" sortOrder="95" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Display Setting</label>
+                 <field id="enable_delivery_comment" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Delivery Comment</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_header_footer" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show/Hide Footer/Header</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="display_term_condition" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Terms and Conditions</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="step_number_color" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Checkout Step Number Color</label>
+                    <frontend_model>Dotsquares\OneStepCheckout\Block\Color</frontend_model>
+                </field>
+                <field id="step_bgr_color" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Checkout Step Background Color</label>
+                    <frontend_model>Dotsquares\OneStepCheckout\Block\Color</frontend_model>
+                </field>
+                <field id="css_code" translate="label" type="textarea" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Custom Code</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

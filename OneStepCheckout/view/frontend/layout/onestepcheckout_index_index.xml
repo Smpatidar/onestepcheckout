@@ -1,0 +1,24 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="checkout_index_index"/>
+    <body>
+        <attribute name="class" value="dotsquares-onestepcheckout"/>
+        <attribute name="class" value="checkout-index-index"/>
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                    <item name="checkout" xsi:type="array">
+                        <item name="component" xsi:type="string">Dotsquares_OneStepCheckout/js/view/onestepcheckout</item>
+                    </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>   
+        <referenceContainer name="sidebar.additional" remove="true"/>
+        <referenceBlock name="top.search" remove="true"/>
+        <referenceBlock name="minicart" remove="true"/>
+        <referenceContainer name="footer-container" remove="true"/>
+        <referenceBlock name="header.panel.wrapper" remove="true"/>
+    </body>
+</page>
+
